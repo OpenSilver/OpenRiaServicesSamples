@@ -56,10 +56,13 @@ namespace WpfCore
             }
             else
             {
-                MessageBox.Show($"LoginSuccess: {obj.LoginSuccess}");
                 if (obj.LoginSuccess)
                 {
                     this.NavigationService.Navigate(new MainPage());
+                }
+                else
+                {
+                    MessageBox.Show($"LoginSuccess: false");
                 }
             }
         }
