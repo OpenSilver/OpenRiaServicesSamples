@@ -1,5 +1,5 @@
-﻿using OpenRiaServices.DomainServices.Client;
-using OpenRiaServices.DomainServices.Client.ApplicationServices;
+﻿using OpenRiaServices.Client;
+using OpenRiaServices.Client.Authentication;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -24,7 +24,7 @@ namespace WpfCore
 
         private void App_Startup(object sender, StartupEventArgs e)
         {
-            DomainContext.DomainClientFactory = new OpenRiaServices.DomainServices.Client.Web.SoapDomainClientFactory()
+            DomainContext.DomainClientFactory = new OpenRiaServices.Client.Web.SoapDomainClientFactory()
             {
                 ServerBaseUri = new Uri("http://localhost:57294/Services/", UriKind.Absolute)
             };

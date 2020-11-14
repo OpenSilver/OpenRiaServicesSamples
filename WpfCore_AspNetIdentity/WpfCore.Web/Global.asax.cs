@@ -1,4 +1,4 @@
-﻿using OpenRiaServices.DomainServices.Hosting;
+﻿using OpenRiaServices.Hosting;
 using System.Diagnostics;
 using System.Web;
 using System.Web.Http;

@@ -1,5 +1,5 @@
-﻿using OpenRiaServices.DomainServices.Client;
-using OpenRiaServices.DomainServices.Client.ApplicationServices;
+﻿using OpenRiaServices.Client;
+using OpenRiaServices.Client.Authentication;
 using SimpleApplication.Web;
 using SimpleApplication.Web.Model;
 using System;

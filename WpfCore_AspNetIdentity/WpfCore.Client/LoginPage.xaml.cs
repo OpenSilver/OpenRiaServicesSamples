@@ -1,5 +1,5 @@
-﻿using OpenRiaServices.DomainServices.Client;
-using OpenRiaServices.DomainServices.Client.ApplicationServices;
+﻿using OpenRiaServices.Client;
+using OpenRiaServices.Client.Authentication;
 using SimpleApplication.Client;
 using System;
 using System.Collections.Generic;
@@ -29,7 +29,7 @@ namespace WpfCore
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
-            DomainContext.DomainClientFactory = new OpenRiaServices.DomainServices.Client.Web.SoapDomainClientFactory()
+            DomainContext.DomainClientFactory = new OpenRiaServices.Client.Web.SoapDomainClientFactory()
             {
                 ServerBaseUri = new Uri(Uri.Text, UriKind.Absolute)
             };

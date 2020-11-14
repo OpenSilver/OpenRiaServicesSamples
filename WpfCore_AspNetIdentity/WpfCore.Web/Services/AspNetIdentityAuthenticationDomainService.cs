@@ -7,14 +7,13 @@ using System.Web;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using OpenRiaServices.DomainServices.Hosting;
-using OpenRiaServices.DomainServices.Server;
-using OpenRiaServices.DomainServices.Server.Authentication;
+using OpenRiaServices.Server;
+using OpenRiaServices.Server.Authentication;
 using WpfCore.Web;
 
 namespace SimpleApplication.Web
 {
-    public class User : OpenRiaServices.DomainServices.Server.Authentication.IUser
+    public class User : OpenRiaServices.Server.Authentication.IUser
     {
         [Key]
         public string Name { get; set; }
