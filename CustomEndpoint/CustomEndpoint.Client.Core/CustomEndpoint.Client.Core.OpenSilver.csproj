@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>CustomEndpoint.Client</RootNamespace>
+    <LinkedOpenRiaServerProject>..\CustomEndpoint.Web\CustomEndpoint.Web.csproj</LinkedOpenRiaServerProject>
+    <OpenRiaGenerateApplicationContext>true</OpenRiaGenerateApplicationContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenRiaServices.Client.CodeGen" Version="5.0.0-preview0003">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="OpenSilver.OpenRiaServices.Client.Core" Version="1.0.0-beta.1.22.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Generated_Code\" />
+  </ItemGroup>
+
+</Project>

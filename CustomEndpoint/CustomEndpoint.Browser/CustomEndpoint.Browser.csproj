@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RazorLangVersion>3.0</RazorLangVersion>
+    <OpenSilverType>4</OpenSilverType>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="3.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Build" Version="3.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="3.2.0" />
+    <PackageReference Include="OpenSilver" Version="1.0.0-beta.1.22" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CustomEndpoint.Client\CustomEndpoint.Client.OpenSilver.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+     <DisableImplicitNamespaceImports>True</DisableImplicitNamespaceImports>
+  </PropertyGroup>
+
+</Project>

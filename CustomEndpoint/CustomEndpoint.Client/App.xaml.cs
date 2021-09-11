@@ -15,6 +15,20 @@ namespace CustomEndpoint.Client
         public App()
         {
             this.Startup += App_Startup;
+
+#if OPENSILVER
+            this.InitializeComponent();
+
+            // Enter construction logic here...
+
+            DomainContext.DomainClientFactory = new OpenRiaServices.DomainServices.Client.Web.SoapDomainClientFactory()
+            {
+                ServerBaseUri = new Uri("http://localhost:51359/"),
+            };
+
+            var mainPage = new MainPage();
+            Window.Current.Content = mainPage;
+#endif
         }
 
         private void App_Startup(object sender, StartupEventArgs e)

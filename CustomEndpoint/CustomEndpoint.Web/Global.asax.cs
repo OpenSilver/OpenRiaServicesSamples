@@ -21,6 +21,7 @@ namespace CustomEndpoint.Web
             var configuration = DomainServieHostingConfiguration.Current;
             configuration.EndpointFactories.Clear();
             configuration.EndpointFactories.Add(new BinaryEndpointFactory());
+            configuration.EndpointFactories.Add(new SoapXmlEndpointFactory());
         }
 
         protected void Session_Start(object sender, EventArgs e)
