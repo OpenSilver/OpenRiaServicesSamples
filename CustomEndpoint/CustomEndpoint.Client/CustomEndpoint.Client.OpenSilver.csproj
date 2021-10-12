@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="OpenSilver" Version="1.0.0-beta.1.22" />
-    <PackageReference Include="OpenSilver.OpenRiaServices.Client.Core" Version="1.0.0-beta.1.22.1" />
+    <PackageReference Include="OpenSilver" Version="1.0.0" />
+    <PackageReference Include="OpenSilver.OpenRiaServices.Client.Core" Version="1.0.0.1" />
   </ItemGroup>
 
   <ItemGroup>
